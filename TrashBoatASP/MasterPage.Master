@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="TrashBoatASP.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .nav {
+            width: 100%;
+            padding-left: 15px;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="container-fluid">
+                <header>
+                    <div id="navigation">
+                        <ul>
+                            <li>
+                                <asp:HyperLink runat="server" ID="lnkHome"
+                                    NavigateUrl="~/Index.aspx">Home</asp:HyperLink></li>
+
+                            <asp:Repeater runat="server" ID="menu"
+                                DataSourceID="SiteMapDataSource1">
+                                <ItemTemplate>
+                                    <li>
+                                        <asp:HyperLink runat="server"
+                                            NavigateUrl='<%# Eval("Url") %>'>
+                                        <%# Eval("Title") %></asp:HyperLink>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1"
+                            runat="server" ShowStartingNode="false" />
+                    </div>
+                </header>
+                <section>
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </section>
+                <footer>
+                </footer>
+            </div>
+            <asp:ScriptManager runat="server">
+                <Scripts>
+                    <asp:ScriptReference Path="~/js/jquery-3.4.1.min.js" />
+                    <asp:ScriptReference Path="~/Scripts/bootstrap.min.js" />
+                </Scripts>
+            </asp:ScriptManager>
+
+        </div>
+    </form>
+</body>
+</html>
