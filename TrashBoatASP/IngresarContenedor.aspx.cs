@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TrashBoatASP.DAL;
 using TrashBoatASP.DTO;
 
 namespace TrashBoatASP
@@ -21,9 +22,23 @@ namespace TrashBoatASP
         {
             ContenedorInteligente contenedor = new ContenedorInteligente();
             string idContenedor = txtIdContenedor.Text;
-            string ubicacion = txtUbicacion.Text;
-            string nivelLlenado = txtNivelLlenado.Text;
+            //string nivelLlenado = txtNivelLlenado.Text;
             string ultimaDescarga = txtUltimaDescarga.Text;
+
+            contenedor.idContenedor = idContenedor;
+           // contenedor.NivelLlenado = nivelLlenado;
+            contenedor.UltimaDescarga = ultimaDescarga;
+
+            ContenedorDAL contenedores = new StaticContenedorDAL();
+            contenedores.agregarContenedores(contenedor);
+
+            Response.Redirect("MostrarContenedores.aspx");
+            
+
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

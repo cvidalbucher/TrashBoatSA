@@ -33,3 +33,4 @@ C:\Users\charl\source\repos\TrashBoatASP\TrashBoatASP\bin\Microsoft.CodeDom.Prov
 C:\Users\charl\source\repos\TrashBoatASP\TrashBoatASP\obj\Debug\TrashBoatASP.csproj.CopyComplete
 C:\Users\charl\source\repos\TrashBoatASP\TrashBoatASP\obj\Debug\TrashBoatASP.dll
 C:\Users\charl\source\repos\TrashBoatASP\TrashBoatASP\obj\Debug\TrashBoatASP.pdb
+C:\Users\charl\source\repos\TrashBoatASP\TrashBoatASP\obj\Debug\TrashBoatASP.csprojAssemblyReference.cache

@@ -5,22 +5,27 @@ using TrashBoatASP.DTO;
 
 namespace TrashBoatASP.DAL
 {
-    class StaticContenedorDAL : contenedorDAL
+    public class StaticContenedorDAL : ContenedorDAL
     {
+    
         private static List<ContenedorInteligente> contenedores = new List<ContenedorInteligente>();
+
+
         public void actualizarContenedores(string id)
         {
             throw new NotImplementedException();
         }
 
-        public void agregarContenedores()
+        public void agregarContenedores(ContenedorInteligente contenedor)
         {
-            throw new NotImplementedException();
+            contenedores.Add(contenedor); 
         }
 
-        public void buscarContendores(string id)
+        public ContenedorInteligente buscarContendores(string id)
         {
-            throw new NotImplementedException();
+            
+            return contenedores.Find(c => c.idContenedor == id);
+
         }
 
         public void eliminarContenedores(string id)
@@ -30,8 +35,9 @@ namespace TrashBoatASP.DAL
 
         public List<ContenedorInteligente> GetContenedorInteligentes()
         {
-            throw new NotImplementedException();
+            return contenedores;
         }
+        
 
     }
 }

@@ -5,12 +5,12 @@ using TrashBoatASP.DTO;
 
 namespace TrashBoatASP.DAL
 {
-    interface contenedorDAL
+    interface ContenedorDAL
     {
         // fALTA PUBLIC
         List<ContenedorInteligente> GetContenedorInteligentes();
-        void agregarContenedores();
-        void buscarContendores(string id);
+        void agregarContenedores(ContenedorInteligente contenedor);
+        ContenedorInteligente buscarContendores(string id);
         void actualizarContenedores(string id);
         void eliminarContenedores(string id);
 
