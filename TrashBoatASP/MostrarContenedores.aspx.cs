@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using TrashBoatASP.DAL;
+using TrashBoatASP.DTO;
 
 namespace TrashBoatASP
 {
@@ -16,9 +17,12 @@ namespace TrashBoatASP
             contenedores = new StaticContenedorDAL();
             if (!IsPostBack)
             {
+                double numero = contenedores.GetContenedorInteligentes().ElementAt<ContenedorInteligente>(0).CapacidadTotal;
                 this.gvContenedores.DataSource = contenedores.GetContenedorInteligentes();
                 this.gvContenedores.DataBind();
-
+                String.Format("{0:0.00}", numero);
+                lblPrueba.Text = Convert.ToString(numero);
+                
             }
 
         }

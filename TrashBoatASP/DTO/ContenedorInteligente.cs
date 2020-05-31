@@ -6,15 +6,15 @@ namespace TrashBoatASP.DTO
 {
     public class ContenedorInteligente
     {
-        private int idContenedor;
+        private long idContenedor;
         private string nombreClave;
-        private float capacidadActual;
-        private float capacidadTotal;
+        private double capacidadActual;
+        private double capacidadTotal;
 
        
     
 
-        public int IdContenedor
+        public long IdContenedor
         {
             get
             {
@@ -40,7 +40,7 @@ namespace TrashBoatASP.DTO
             }
         }
 
-        public float CapacidadTotal
+        public double CapacidadTotal
         {
             get
             {
@@ -53,7 +53,7 @@ namespace TrashBoatASP.DTO
             }
         }
 
-        public float CapacidadActual
+        public double CapacidadActual
         {
             get
             {

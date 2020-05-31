@@ -21,10 +21,10 @@ namespace TrashBoatASP
         protected void btnIngresarContenedor_Click(object sender, EventArgs e)
         {
             ContenedorInteligente contenedor = new ContenedorInteligente();
-            int idContenedor = Int32.Parse(txtIdContenedor.Text);
+            long idContenedor = Int64.Parse(txtIdContenedor.Text);
             string nombreClave  = txtNombreClave.Text;
-            float capacidadActual = Int32.Parse(ddlCapacidadActual.Text);
-            float capacidadTotal = Int32.Parse(txtCapacidadTotal.Text);
+            double capacidadTotal =(double)Convert.ToDecimal(txtCapacidadTotal.Text);
+            double capacidadActual = (double)Convert.ToDecimal(ddlCapacidadActual.Text);
             capacidadActual = (capacidadActual * capacidadTotal);
 
             contenedor.IdContenedor = idContenedor;

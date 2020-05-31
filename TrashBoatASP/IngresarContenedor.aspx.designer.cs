@@ -42,13 +42,13 @@ namespace TrashBoatASP
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvIdContenedor;
 
         /// <summary>
-        /// Control rvIdContenedor.
+        /// Control revIdContenedor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvIdContenedor;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revIdContenedor;
 
         /// <summary>
         /// Control Label3.
@@ -67,6 +67,15 @@ namespace TrashBoatASP
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombreClave;
+
+        /// <summary>
+        /// Control revTxtNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revTxtNombre;
 
         /// <summary>
         /// Control rfvTxtNombreClave.

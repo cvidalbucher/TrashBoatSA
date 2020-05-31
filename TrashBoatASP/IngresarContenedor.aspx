@@ -3,12 +3,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Label ID="Label1" runat="server" Text="Ingresar IdContenedor: "></asp:Label>
-    <asp:TextBox ID="txtIdContenedor" runat="server" TextMode="Number"></asp:TextBox>
+    <asp:TextBox ID="txtIdContenedor" runat="server" TextMode="SingleLine"></asp:TextBox>
     <asp:RequiredFieldValidator ID="rfvIdContenedor" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="txtIdContenedor"></asp:RequiredFieldValidator>
-    <asp:RangeValidator ID="rvIdContenedor" runat="server" ErrorMessage="RangeValidator" ControlToValidate="txtIdContenedor" MinimumValue="15" MaximumValue="16" Type="Integer"></asp:RangeValidator>
+    <asp:RegularExpressionValidator ID="revIdContenedor" ControlToValidate="txtIdContenedor" ValidationExpression="^[0-9]{15}$" runat="server" ErrorMessage="RegularExpressionValidator"></asp:RegularExpressionValidator>
     <br />
     <asp:Label ID="Label3" runat="server" Text="Nombre Clave: "></asp:Label>
-    <asp:TextBox ID="txtNombreClave" runat="server" TextMode="number"  ></asp:TextBox>
+    <asp:TextBox ID="txtNombreClave" runat="server" TextMode="SingleLine"  ></asp:TextBox>
+    <asp:RegularExpressionValidator ID="revTxtNombre" ControlToValidate="txtNombreClave" ValidationExpression="^[a-zA-Z]{5,10}$" runat="server" ErrorMessage="RegularExpressionValidator"></asp:RegularExpressionValidator>
     <asp:RequiredFieldValidator ID="rfvTxtNombreClave" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="txtNombreClave"></asp:RequiredFieldValidator>
     <br />
     <asp:Label ID="Label2" runat="server" Text="Capacidad Total: "></asp:Label>
