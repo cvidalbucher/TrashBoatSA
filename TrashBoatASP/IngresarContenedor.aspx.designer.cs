@@ -33,6 +33,24 @@ namespace TrashBoatASP
         protected global::System.Web.UI.WebControls.TextBox txtIdContenedor;
 
         /// <summary>
+        /// Control rfvIdContenedor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvIdContenedor;
+
+        /// <summary>
+        /// Control rvIdContenedor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvIdContenedor;
+
+        /// <summary>
         /// Control Label3.
         /// </summary>
         /// <remarks>
@@ -42,13 +60,58 @@ namespace TrashBoatASP
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control txtNivelLlenado.
+        /// Control txtNombreClave.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNivelLlenado;
+        protected global::System.Web.UI.WebControls.TextBox txtNombreClave;
+
+        /// <summary>
+        /// Control rfvTxtNombreClave.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTxtNombreClave;
+
+        /// <summary>
+        /// Control Label2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
+
+        /// <summary>
+        /// Control txtCapacidadTotal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCapacidadTotal;
+
+        /// <summary>
+        /// Control rfvCapicidadTotal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCapicidadTotal;
+
+        /// <summary>
+        /// Control revCapacidadTotal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCapacidadTotal;
 
         /// <summary>
         /// Control Label4.
@@ -60,13 +123,13 @@ namespace TrashBoatASP
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Control txtUltimaDescarga.
+        /// Control ddlCapacidadActual.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUltimaDescarga;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCapacidadActual;
 
         /// <summary>
         /// Control btnIngresarContenedor.

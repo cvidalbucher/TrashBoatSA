@@ -13,7 +13,7 @@ namespace TrashBoatASP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Console.WriteLine("funciona1");
         }
 
      
@@ -21,25 +21,25 @@ namespace TrashBoatASP
         protected void btnIngresarContenedor_Click(object sender, EventArgs e)
         {
             ContenedorInteligente contenedor = new ContenedorInteligente();
-            string idContenedor = txtIdContenedor.Text;
-            //string nivelLlenado = txtNivelLlenado.Text;
-            string ultimaDescarga = txtUltimaDescarga.Text;
+            int idContenedor = Int32.Parse(txtIdContenedor.Text);
+            string nombreClave  = txtNombreClave.Text;
+            float capacidadActual = Int32.Parse(ddlCapacidadActual.Text);
+            float capacidadTotal = Int32.Parse(txtCapacidadTotal.Text);
+            capacidadActual = (capacidadActual * capacidadTotal);
 
-            contenedor.idContenedor = idContenedor;
-           // contenedor.NivelLlenado = nivelLlenado;
-            contenedor.UltimaDescarga = ultimaDescarga;
+            contenedor.IdContenedor = idContenedor;
+            contenedor.NombreClave = nombreClave;
+            contenedor.CapacidadActual = capacidadActual;
+            contenedor.CapacidadTotal = capacidadTotal;
 
             ContenedorDAL contenedores = new StaticContenedorDAL();
             contenedores.agregarContenedores(contenedor);
 
             Response.Redirect("MostrarContenedores.aspx");
             
+            
 
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

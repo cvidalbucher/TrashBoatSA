@@ -10,7 +10,7 @@ namespace TrashBoatASP.DAL
         // fALTA PUBLIC
         List<ContenedorInteligente> GetContenedorInteligentes();
         void agregarContenedores(ContenedorInteligente contenedor);
-        ContenedorInteligente buscarContendores(string id);
+        ContenedorInteligente buscarContendores(int id);
         void actualizarContenedores(string id);
         void eliminarContenedores(string id);
 

@@ -21,10 +21,10 @@ namespace TrashBoatASP.DAL
             contenedores.Add(contenedor); 
         }
 
-        public ContenedorInteligente buscarContendores(string id)
+        public ContenedorInteligente buscarContendores(int id)
         {
             
-            return contenedores.Find(c => c.idContenedor == id);
+            return contenedores.Find(c => c.IdContenedor == id);
 
         }
 

@@ -6,12 +6,15 @@ namespace TrashBoatASP.DTO
 {
     public class ContenedorInteligente
     {
-        public string idContenedor;
-        private string ubicacion;
-        private string nivelLlenado;
-        private string ultimaDescarga;
+        private int idContenedor;
+        private string nombreClave;
+        private float capacidadActual;
+        private float capacidadTotal;
 
-        public string IdContenedor
+       
+    
+
+        public int IdContenedor
         {
             get
             {
@@ -24,44 +27,45 @@ namespace TrashBoatASP.DTO
             }
         }
 
-        public string Ubicacion
+        public string NombreClave
         {
             get
             {
-                return ubicacion;
+                return nombreClave;
             }
 
             set
             {
-                ubicacion = value;
+                nombreClave = value;
             }
         }
 
-        public string NivelLlenado
+        public float CapacidadTotal
         {
             get
             {
-                return nivelLlenado;
+                return capacidadTotal;
             }
 
             set
             {
-                nivelLlenado = value;
+                capacidadTotal = value;
             }
         }
 
-        public string UltimaDescarga
+        public float CapacidadActual
         {
             get
             {
-                return ultimaDescarga;
+                return capacidadActual;
             }
 
             set
             {
-                ultimaDescarga = value;
+                capacidadActual = value;
             }
         }
+
         public void definirLlenado()
         {
 
